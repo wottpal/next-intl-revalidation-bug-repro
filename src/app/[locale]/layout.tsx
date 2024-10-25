@@ -9,6 +9,8 @@ type Props = {
   params: Promise<{locale: string}>;
 };
 
+export const dynamicParams = false
+
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({locale}));
 }
